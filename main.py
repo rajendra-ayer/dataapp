@@ -3,6 +3,7 @@ import pandas as pd
 
 st.set_page_config(page_title="sewak app")
 file = st.file_uploader("Upload CSV", type="csv")
+
 if file:
     df=pd.read_csv(file)
     st.write(df.head())
